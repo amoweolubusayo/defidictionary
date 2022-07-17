@@ -1,0 +1,160 @@
+body {
+  font-family: 'Chivo', sans-serif;
+}
+
+
+h1 {
+  font-family: 'Turret Road', cursive;
+}
+
+.header,
+.footer {
+  width: 100%;
+  background: #42a5f5;
+  padding: 20px 0;
+}
+
+.footer {
+  height: 100px;
+  margin-top: 20px;
+}
+
+.content{
+flex: 1;
+}
+
+
+#dictionary {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.entry {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 0;
+  margin: 30px 60px 0 0;
+}
+
+.word {
+  font-size: 2.4rem;
+  border-bottom: #42a5f5 4px solid;
+  padding: 10px 5px;
+  margin-top: 0;
+  font-family: 'Turret Road', cursive;
+}
+.duplicate{
+  color: red;
+}
+
+.definition {
+  margin-top: -5px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.wikilinks a:hover {
+  text-decoration: underline;
+}
+
+.wikilinks a {
+  font-style: italic ;
+  background-color: black;
+  border-radius: 8px;
+  padding: 1px 5px;
+}
+
+.light .wikilinks a {
+    color: #282c34;
+    background-color: rgba(187, 199, 231, 0.253);
+}
+
+
+#scroll-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  
+  }
+  #scroll-top rect {
+  fill: #42a5f5;
+  stroke-width: 1;
+  stroke: #FFFFFF;
+  cursor: pointer;
+  
+  }
+  #scroll-top polyline {
+    stroke: #FFFFFF;
+    fill:none;
+    stroke-width:3;
+    cursor: pointer;
+  }
+  /* Fix for Issue #70*/
+  @media(max-width:950px) {
+  .entry {
+    width: 40%;
+  }
+}
+@media(max-width: 676px) {
+  .entry {
+    width: 100%;
+  }
+}
+
+a {
+  color: white;
+}
+
+.dark {
+  background: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.light {
+  background: white;
+  color: #282c34;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.light label {
+  color: navy;
+}
+
+.switch {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.switch label {
+  color: white;
+}
+
+.switch label input[type="checkbox"] + .lever::after {
+  background: darkblue;
+}
+
+.switch label .lever {
+  background: #333;
+}
+
+.switch label input[type="checkbox"]:checked + .lever {
+  background: lightskyblue;
+}
+
+.switch label input[type="checkbox"]:checked + .lever::after {
+  background: white;
+}
+
+.light #search {
+  color: #282c34;
+}
+
+.dark #search {
+  color: white;
+}
