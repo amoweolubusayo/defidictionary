@@ -151,8 +151,8 @@ function App() {
       <div className="footer">
         <div className="container">
           <p>
-            For more information about DevDictionary, see the{" "}
-            <a href="https://github.com/jessmear/dictionary-for-devs">
+            For more information about DefiDictionary, see the{" "}
+            <a href="https://github.com/amoweolubusayo/defidictionary">
               github repo
             </a>
             .
